@@ -1,0 +1,396 @@
+calc... <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .bgpic{
+            height:450px;
+            width:700px;
+            background-image: url(https://www.freemockupworld.com/wp-content/uploads/2020/11/Hand-Holding-iPhone-Mockup-01.jpg);
+            background-size:700px;
+            background-repeat: no-repeat;
+            position:relative;
+            left:400px;
+            top:100px;
+            border: 1px solid pink; 
+            border-radius: 30px;
+            
+        }
+        .bg{
+            background-color: crimson;
+            height:700px;
+            
+        }
+        .display{
+            height:350px;
+            width:170px;
+            border:1px solid black;
+            position: relative;
+            bottom:550px;
+            transform: rotate(15deg);
+            left:656px;
+            border-bottom-left-radius:26px ;
+            border-bottom-right-radius:26px ;
+            background-color: black;
+        }  
+        .dial {
+            height:20px;
+            width:30px;
+            border:1px solid black;
+            position: relative;
+            bottom:1000px;
+            margin:15px;
+            border-radius: 10px;
+            
+        } 
+        #h1{
+            position:relative;
+            left:643px;
+            top:255px;
+            transform: rotate(15deg);
+            background-color: rgb(117, 204, 149);
+            border-radius: 10px;
+        }
+        
+        #h2{
+            height:20px;
+            width:30px;
+            position:relative;
+            left:635px;
+            top:265px;
+            background-color: white;
+            transform: rotate(15deg);
+            background-color: red;
+            border-radius: 10px;
+            
+        }
+        #h3{
+            height:20px;
+            width:30px;
+            position:relative;
+            left:628px;
+            top:273px;
+            background-color: white;
+            transform: rotate(15deg);
+            background-color: grey;
+            border-radius: 10px;
+        }
+        #h4{
+            height:20px;
+            width:30px;
+            position:relative;
+            left:622px;
+            top:281px;
+            background-color: white;
+            transform: rotate(15deg);
+            background-color: red;
+            border-radius: 10px;
+        }
+        #h5{
+            height:20px;
+            width:30px;
+            position:relative;
+            left:614.5px;
+            top:288px;
+            background-color: white;
+            transform: rotate(15deg);
+            background-color: grey;
+            border-radius: 10px;
+        }
+        #h6{
+            
+            position:relative;
+            left:683px;
+            top:165px;
+            transform: rotate(15deg);
+            background-color:rgb(204, 187, 117);
+            border-radius: 10px;
+        }
+        
+        #h7{
+            height:20px;
+            width:30px;
+            position:relative;
+            left:675px;
+            top:174px;
+            background-color: white;
+            transform: rotate(15deg);
+            background-color: grey;
+            border-radius: 10px;
+            
+        }
+        #h8{
+            height:20px;
+            width:30px;
+            position:relative;
+            left:667px;
+            top:181px;
+            background-color: white;
+            transform: rotate(15deg);
+            background-color: red;
+            border-radius: 10px;
+        }
+        #h9{
+            height:20px;
+            width:30px;
+            position:relative;
+            left:659px;
+            top:189px;
+            background-color: white;
+            transform: rotate(15deg);
+            background-color: grey;
+            border-radius: 10px;
+        }
+        #h10{
+            height:20px;
+            width:30px;
+            position:relative;
+            left:651px;
+            top:198px;
+            background-color: white;
+            transform: rotate(15deg);
+            background-color: red;
+            border-radius: 10px;
+        }
+        #h11{
+            height:20px;
+            width:30px;
+            position:relative;
+            left:725px;
+            top:76px;
+            transform: rotate(15deg);
+            background-color:rgb(5, 28, 143);
+            border-radius: 10px;
+        }
+        
+        #h12{
+            height:20px;
+            width:30px;
+            position:relative;
+            left:715px;
+            top:85px;
+            background-color: white;
+            transform: rotate(15deg);
+            background-color: red;
+            border-radius: 10px;
+            
+        }
+        #h13{
+            height:20px;
+            width:30px;
+            position:relative;
+            left:707px;
+            top:93px;
+            background-color: white;
+            transform: rotate(15deg);
+            background-color: grey;
+            border-radius: 10px;
+        }
+        #h14{
+            height:20px;
+            width:30px;
+            position:relative;
+            left:699px;
+            top:100px;
+            background-color: white;
+            transform: rotate(15deg);
+            background-color: red;
+            border-radius: 10px;
+        }
+        #h15{
+            height:20px;
+            width:30px;
+            position:relative;
+            left:691px;
+            top:109px;
+            background-color:white;
+            transform: rotate(15deg);
+            background-color:grey;
+            border-radius: 10px;
+        }
+        #h16{
+            height:20px;
+            width:30px;
+            position:relative;
+            left:763px;
+            top:-12px;
+            transform: rotate(15deg);
+            background-color:rgb(204, 117, 204);
+            border-radius: 10px;
+        }
+        
+        #h17{
+            height:20px;
+            width:30px;
+            position:relative;
+            left:754px;
+            top:-4px;
+            background-color: white;
+            transform: rotate(15deg);
+            background-color: grey;
+            border-radius: 10px;
+            background-color:rgb(204, 117, 204);
+            
+        }
+        #h18{
+            height:20px;
+            width:30px;
+            position:relative;
+            left:746px;
+            top:4.5px;
+            background-color: white;
+            transform: rotate(15deg);
+            background-color: grey;
+            border-radius: 10px;
+            background-color:rgb(204, 117, 204);
+        }
+        #h19{
+            height:20px;
+            width:30px;
+            position:relative;
+            left:738px;
+            top:11px;
+            background-color: white;
+            transform: rotate(15deg);
+            background-color: grey;
+            border-radius: 10px;
+            background-color:rgb(204, 117, 204);
+        }
+        #h20{
+            height:20px;
+            width:30px;
+            position:relative;
+            left:729px;
+            top:20px;
+            background-color: white;
+            transform: rotate(15deg);
+            background-color: grey;
+            border-radius: 10px;
+            background-color:rgb(204, 117, 204);
+        }
+        input[type=number]
+        {
+            height:40px;
+            width:140px;
+            border:1px solid red;
+            position: relative;
+            bottom:830px;
+            transform:rotate(15deg);
+            left:678px;
+            background-color: white;
+            color: white;
+            
+        }
+        input[type=text]
+        {
+            color:white;
+            height:40px;
+            width:160px;
+            position: relative;
+            left:650px;
+            bottom:190px;
+            transform: rotate(16deg);
+            font-size:larger;
+            background-color: black;
+            text-align: right;
+
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="bg">
+        <div class="bgpic"></div>
+    </div>
+    <div class="display"></div>
+    
+    <div class="dial">
+        <button id="h1" onclick="clearResult()">AC</button>
+        <button id="h2" onclick="appendNumber(7)">7</button>
+        <button id="h3" onclick="appendNumber(4)">4</button>
+        <button id="h4" onclick="appendNumber(1)">1</button>
+        <button id="h5" onclick="appendOperator('%')">%</button>
+        <button id="h6" onclick="del()">del</button>
+        <button id="h7" onclick="appendNumber(8)">8</button>
+        <button id="h8" onclick="appendNumber(5)">5</button>
+        <button id="h9" onclick="appendNumber(2)">2</button>
+        <button id="h10" onclick="appendNumber(0)">0</button>
+        <button id="h11" onclick="appendOperator('.')">.</button>
+        <button id="h12" onclick="appendNumber(9)">9</button>
+        <button id="h13" onclick="appendNumber(6)">6</button>
+        <button id="h14" onclick="appendNumber(3)">3</button>
+        <button id="h15" onclick="appendOperator('**2')">x2</button>
+        <button id="h16" onclick="appendOperator('/')">/</button>
+        <button id="h17" onclick="appendOperator('')"></button>
+        <button id="h18" onclick="appendOperator('-')">-</button>
+        <button id="h19" onclick="appendOperator('+')">+</button>
+        <button id="h20" onclick="calculateResult()">=</button>
+        <input type="text" id="result" disabled>
+        
+    </div>
+    </div>
+    <script src="script.js"></script>   
+</body>
+<script>
+    
+    let expression = '';
+function appendNumber(number){
+expression += number;
+updateResult();
+ }
+
+function appendOperator(operator) {
+expression += operator;
+updateResult();
+}
+
+    function clearResult() 
+    {
+     expression = '';
+     updateResult();
+    }
+   function calculateResult() {
+   try {
+    const result = eval(expression);
+    expression = result.toString();
+    updateResult();
+   } catch (error) {
+    expression = '';
+    updateResult('Error');
+  }
+}
+function updateResult(errorMessage = '') {
+  document.getElementById('result').value = errorMessage || expression;
+}
+function del() 
+{
+    expression = expression.slice(0, -1);
+    updateResult();
+}
+function appendOperator(operator)
+ {
+            if (operator === '%') {
+                expression += '/100';
+            } else {
+                expression += operator;
+            }
+            updateResult();
+}
+function appendOperator(operator) {
+            if (operator === '+/-') {
+                togglePlusMinus();
+            } else if (operator === '%') {
+                expression += '/100';
+            } else if (operator === '**2') {
+                expression += '**2';
+            } else {
+                expression += operator;
+            }
+            updateResult();
+        }
+
+</script>
+</html>
